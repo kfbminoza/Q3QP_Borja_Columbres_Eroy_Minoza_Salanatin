@@ -18,4 +18,5 @@ In our game you can see you and your opponents health, choosing a coin face, and
 We hope you enjoy the game!
 
 Sincerely, 
-9-Barium, Group BCEMS
+
+9-Barium - Group BCEMS
