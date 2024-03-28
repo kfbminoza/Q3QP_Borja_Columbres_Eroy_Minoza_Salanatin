@@ -177,3 +177,8 @@ function playerDefend(){ //Determines what will happen if the player choose to d
 function resetBtn(){ //Resets game
     location.reload();
 }
+
+function updateHPBars(){
+    document.getElementById("playerH").style.width = pH + '%';
+    document.getElementById("oppoH").style.width = oH + '%';
+}

@@ -4,30 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game!</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Toss a coin!</h1> <!--Calls attention to player on where to begin-->
-    <p id="playH"></p> <!--Player Health-->
-    <p id="oppH"></p> <!--Opponent Health-->
+    <div id="cointossing">
+        <h1>Toss a coin!</h1>
+    <p id="spinningcoin"></p>
 
     <p>Choose a coin face:</p>
-    <select id="pick" onchange="begin()"> <!--Dropdown for heads or tails selection-->
+    <select id="pick">
         <option value="" disabled selected>Choose</option>
         <option value="0">Heads</option>
         <option value="1">Tails</option>
     </select>
-    <p id="flipResult"></p> <!--Results of toss coin-->
+    <p id="flipResult"></p>
+    <button onclick="tossCoin();" id="tC">Toss Coin</button>
+    </div>
+
+    <div class="hbarz">
+        <div class="hbar" id="playerH"><img src="media/player.png" alt=""></div>
+        <div class="hbar" id="oppoH"><img src="media/bot.png" alt=""></div>
+    </div>
+
+    <p id="playH"></p> <!--Player Health-->
+    <p id="oppH"></p> <!--Opponent Health-->
     <p id="act"></p> <!--Player action-->
     <p id="secondAct"></p> <!--Opponent possible action-->
     <p id="youAct"></p> <!--Outcome of action-->
     <p id="win"></p> <!--Winner output-->
 
+    <div id="playz">
+        <button id="atk" onclick="calculateDamage();opponentAction();playerAttack()" disabled>Attack</button> 
+        <!--Player attack button-->
+        <button id="def" onclick="calculateDamage();opponentAction();playerDefend()" disabled>Defend</button> 
+        <!--Player defend button-->
+    </div>
     <button onclick="tossCoin()" id="tC" disabled>Toss Coin</button> <!--Toss coin button-->
-    <button id="atk" onclick="calculateDamage();opponentAction();playerAttack()" disabled>Attack</button> 
-    <!--Player attack button-->
-    <button id="def" onclick="calculateDamage();opponentAction();playerDefend()" disabled>Defend</button> 
-    <!--Player defend button-->
+    
     <button id="resetb" onclick="resetBtn()" disabled>Reset</button>
     <!--Reset game button-->
 
