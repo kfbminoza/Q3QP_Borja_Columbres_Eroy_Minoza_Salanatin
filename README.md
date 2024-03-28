@@ -16,5 +16,6 @@ In our game you can see you and your opponents health, choosing a coin face, and
 5.) You may press the reset button to play again!
 
 We hope you enjoy the game!
+
 Sincerely, 
 9-Barium, Group BCEMS
