@@ -5,7 +5,7 @@ document.getElementById("playH").innerHTML="Player: " + pH; //displays full heal
 document.getElementById("oppH").innerHTML="Opponent: " + oH;
 
 function begin(){
-    document.getElementById('tC').disabled=false
+    document.getElementById('tC').disabled=false //enables toss coin after selection
 }
 
 function tossCoin(){ ///This function determines if the coin will be heads or tails, which will determine who will start the game the player or opponent.
