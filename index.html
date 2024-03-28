@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game!</title>
+</head>
+<body>
+    <h1>Toss a coin!</h1> <!--Calls attention to player on where to begin-->
+    <p id="playH"></p> <!--Player Health-->
+    <p id="oppH"></p> <!--Opponent Health-->
+
+    <p>Choose a coin face:</p>
+    <select id="pick"> <!--Dropdown for heads or tails selection-->
+        <option value="" disabled selected>Choose</option>
+        <option value="0">Heads</option>
+        <option value="1">Tails</option>
+    </select>
+    <p id="flipResult"></p> <!--Results of toss coin-->
+    <p id="act"></p> <!--Player action-->
+    <p id="secondAct"></p> <!--Opponent possible action-->
+    <p id="youAct"></p> <!--Outcome of action-->
+    <p id="win"></p> <!--Winner output-->
+
+    <button onclick="tossCoin();" id="tC">Toss Coin</button> <!--Toss coin button-->
+    <button id="atk" onclick="calculateDamage();opponentAction();playerAttack()" disabled>Attack</button> 
+    <!--Player attack button-->
+    <button id="def" onclick="calculateDamage();opponentAction();playerDefend()" disabled>Defend</button> 
+    <!--Player defend button-->
+    <button id="resetb" onclick="resetBtn()" disabled>Reset</button>
+    <!--Reset game button-->
+
+    <script src="script.js"></script>
+    <!--link to javascript-->
+</body>
+</html>
