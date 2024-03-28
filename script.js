@@ -4,6 +4,9 @@ var oH=100;
 document.getElementById("playH").innerHTML="Player: " + pH; //displays full health
 document.getElementById("oppH").innerHTML="Opponent: " + oH;
 
+function begin(){
+    document.getElementById('tC').disabled=false
+}
 
 function tossCoin(){ ///This function determines if the coin will be heads or tails, which will determine who will start the game the player or opponent.
     pickk=document.getElementById("pick").value;
