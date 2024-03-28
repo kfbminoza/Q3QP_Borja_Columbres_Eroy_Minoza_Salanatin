@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url(media/Minecraft.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: '8 Bit';
+    src: url(media/8-bit-pusab.ttf) format('truetype');
+}
+
+body{
+    background-image: url(media/sakura.gif);
+    background-size: cover;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#cointossing{
+    background-color: #bf30f8;
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+#cointossing h1{
+    font-family: '8 bit';
+    color: pink;
+    text-shadow: 5px 5px black;
+}
+
+#cointossing p{
+    font-family: 'Minecraft';
+    color: white;
+    font-size: 20px;
+}
+
+#spinningcoin{
+    background-image: url(media/spin\ spin.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    margin-top: -25px;
+    margin-left: 50px;
+    margin-bottom: -10px;
+}
+
+#pick{
+    background-color: rgb(255, 246, 121);
+    font-family: 'Minecraft';
+    width: 100px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#tC{
+    background-color: rgb(172, 6, 6);
+    font-family: 'Minecraft';
+    color: white;
+    width: 100px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.hbarz{
+    width: 300px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hbarz img{
+    height: 200px;
+    width: 200px;
+}
+
+.hbar{
+    height: 100%;
+    width: 100%;
+}
+
+#playerH{
+    background-color: rgb(103, 255, 103);
+    margin-top: 50px;
+    margin-left: 400px;
+}
+
+#playerH img{
+    margin-top: -50px;
+    margin-left: -145px;
+}
+
+#oppoH{
+    background-color: red;
+    margin-top: -34px;
+    margin-left: 900px;
+}
+
+#oppoH img{
+    margin-top: -50px;
+    margin-left: 200px;
+}
+
+#playH{
+    font-family: 'Minecraft';
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    left: 410px;
+    z-index: 9999;
+}
+
+#oppH{
+    font-family: 'Minecraft';
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    left: 990px;
+    z-index: 9999;
+}
+
+#act{
+    font-family: 'Minecraft';
+    font-size: 75px;
+    color: yellow;
+    position: absolute;
+    margin-top: -350px;
+    margin-left: 450px;
+}
+
+#secondAct{
+    font-family: 'Minecraft';
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 450px;
+}
+
+#youAct{
+    font-family: 'Minecraft';
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 450px;
+}
+
+#win{
+    font-family: '8 bit';
+    font-size: 100px;
+    color: rgb(255, 0, 106);
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 400px;
+}
+
+#playz{
+    margin-left: 650px;
+}
+
+#atk{
+    background-color: rgb(121, 217, 255);
+    font-family: 'Minecraft';
+    width: 100px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#def{
+    background-color: rgb(121, 217, 255);
+    font-family: 'Minecraft';
+    width: 100px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#resetb{
+    background-color: rgb(255, 121, 237);
+    font-family: 'Minecraft';
+    width: 100px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 70px;
+}
