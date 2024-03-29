@@ -63,16 +63,19 @@ function playerAttack(){ //Determines what will happen if the player will choose
                 document.getElementById("win").innerHTML="You win!"; //displays winner
                 document.getElementById("atk").disabled=true;
                 document.getElementById("oppH").innerHTML="Opponent: " + oH;
+                updateHPBars();
             }else if(pH<=0){ //Checks player health.
                 pH=0;
                 document.getElementById("win").innerHTML="Opponent wins!"; //displays winner
                 document.getElementById("atk").disabled=true;
                 document.getElementById("oppH").innerHTML="Player: " + pH;
+                updateHPBars();
             }else{
                 document.getElementById("youAct").innerHTML="You inflict " + pDmg + " damage"; //display damage
                 document.getElementById("secondAct").innerHTML="Opponent inflicts " + oppDmg + " damage";
                 document.getElementById("playH").innerHTML="Player: " + pH; //update health
                 document.getElementById("oppH").innerHTML="Opponent: " + oH;
+                updateHPBars();
             }
         }else{ //If the opponent defends.
             pDmg=pDmg-oppDef;
@@ -80,6 +83,7 @@ function playerAttack(){ //Determines what will happen if the player will choose
             if(pDmg<=0){ //Checks if the opponents defense nullified attack
                 pDmg=0;
                 document.getElementById("youAct").innerHTML="The opponent completely defended the attack";
+                updateHPBars();
             }else{
                 oH=oH-pDmg; //Subtracts defense from damage
                 if(oH<=0){
@@ -87,9 +91,11 @@ function playerAttack(){ //Determines what will happen if the player will choose
                     document.getElementById("win").innerHTML="You win!"; //displays winner
                     document.getElementById("atk").disabled=true;
                     document.getElementById("oppH").innerHTML="Opponent: " + oH;
+                    updateHPBars();
                 }else{
                     document.getElementById("youAct").innerHTML="You inflict " + pDmg + " damage"; //displays damage done
                     document.getElementById("oppH").innerHTML="Opponent: " + oH; //updates health
+                    updateHPBars();
                 }
             }
         }
@@ -106,16 +112,19 @@ function playerAttack(){ //Determines what will happen if the player will choose
                 document.getElementById("win").innerHTML="You win!";
                 document.getElementById("atk").disabled=true;
                 document.getElementById("oppH").innerHTML="Opponent: " + oH;
+                updateHPBars();
             }else if(pH<=0){ //Checks player health.
                 pH=0;
                 document.getElementById("win").innerHTML="Opponent wins!"; //displays winner
                 document.getElementById("atk").disabled=true;
                 document.getElementById("oppH").innerHTML="Player: " + pH;
+                updateHPBars();
             }else{
                 document.getElementById("youAct").innerHTML="You inflict " + pDmg + " damage";
                 document.getElementById("secondAct").innerHTML="Opponent inflicts " + oppDmg + " damage";
                 document.getElementById("playH").innerHTML="Player: " + pH;
                 document.getElementById("oppH").innerHTML="Opponent: " + oH;
+                updateHPBars();
             }
         }else{
             pDmg=pDmg-oppDef;
@@ -123,6 +132,7 @@ function playerAttack(){ //Determines what will happen if the player will choose
             if(pDmg<=0){
                 pDmg=0;
                 document.getElementById("youAct").innerHTML="The opponent completely defended the attack.";
+                updateHPBars();
             }else{
                 oH=oH-pDmg;
                 if(oH<=0){
@@ -130,9 +140,11 @@ function playerAttack(){ //Determines what will happen if the player will choose
                     document.getElementById("win").innerHTML="You win!";
                     document.getElementById("atk").disabled=true;
                     document.getElementById("oppH").innerHTML="Opponent: " + oH;
+                    updateHPBars();
                 }else{
                     document.getElementById("youAct").innerHTML="You inflict " + pDmg + " damage";
                     document.getElementById("oppH").innerHTML="Opponent: " + oH;
+                    updateHPBars();
                 }
             }
         }
@@ -152,6 +164,7 @@ function playerDefend(){ //Determines what will happen if the player choose to d
         if(oppDmg<=0){ //Checks if damage is nullified
             oppDmg=0;
             document.getElementById("youAct").innerHTML="You completely blocked the attack";
+            updateHPBars();
         }else{
             pH=pH-oppDmg;
             if(pH<=0){ //Checks player health
@@ -159,13 +172,16 @@ function playerDefend(){ //Determines what will happen if the player choose to d
                 document.getElementById("playH").innerHTML="Player: " + pH;
                 document.getElementById("win").innerHTML="Opponent Wins!"; //Outputs winner
                 document.getElementById("def").disabled=true; //Disables defense button
+                updateHPBars();
             }else{
                 document.getElementById("youAct").innerHTML="Opponent inflicts " + oppDmg + " damage"; //Outputs damage
                 document.getElementById("playH").innerHTML="Player: " + pH; //Updates health
+                updateHPBars();
             }
         }
     }else{
         document.getElementById("youAct").innerHTML="Both of you defended" //Checks if both defended
+        updateHPBars();
     }
     if(pH<=0){ //Checks if player lost
         document.getElementById("atk").disabled=true;
